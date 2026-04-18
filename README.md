@@ -12,6 +12,14 @@ Most P2P libraries are either too heavy or too tied to a specific runtime. We wa
 
 ---
 
+## Install
+
+```bash
+npm install setowire
+```
+
+---
+
 ## How it works
 
 Peers discover each other through multiple strategies running in parallel — whichever works first wins:
@@ -45,7 +53,7 @@ chat.js        — example terminal chat app
 ## Quick start
 
 ```js
-const Swarm  = require('./index');
+const Swarm  = require('setowire');
 const crypto = require('crypto');
 
 const swarm = new Swarm();
@@ -155,4 +163,10 @@ node chat.js alice myroom
 ```
 
 Commands: `/peers`, `/nat`, `/quit`
+
+---
+
+## License
+
+MIT
 
